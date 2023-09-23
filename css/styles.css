@@ -1,0 +1,253 @@
+body{
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #62001d;
+}
+
+.header-img{
+    width: 100%;
+    display: block;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.d-none{
+    display: none;
+}
+
+.mt-5{
+    margin-top: 3rem;
+}
+
+.mb-5{
+    margin-bottom: 3rem;
+}
+
+.mx-3{
+    padding: 0 1rem;
+}
+
+.mx-10{
+    margin: 0 10vw;
+}
+
+/* Navbar */
+
+nav{
+    margin-top: 0;
+    width: 100%;
+    height: 3.3rem;
+    background-color:wheat;
+    font-size: large;
+}
+
+nav ul{
+    margin: 0;
+    padding-left: 0;
+}
+
+nav li{
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    min-width: 4.5rem;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav li:hover, 
+li:focus-within {
+    cursor: pointer;
+    background-color: burlywood;
+}
+
+nav ul li ul{
+    background-color:wheat;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 1rem;
+    left: 0;
+}
+
+.menu-btn:hover .dropdown-menu{
+    visibility: visible;
+}
+
+
+/* Product Categories */
+
+.row{
+    margin: 1rem 0;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col{
+    float: left;
+    padding: 1.5rem;
+    width: calc(100% - 3rem);
+}
+
+.col-3{
+    float: left;
+    padding: 1.5rem;
+    width: calc(25% - 3rem);
+}
+
+.col-6{
+    float: left;
+    padding: 1.5rem;
+    width: calc(50% - 3rem);
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 12px;
+    padding: 0;
+    background-color: white;
+    border-radius: 0.25rem;
+}
+
+.card-img{
+    max-width: 100%;
+    height: 17vw;
+    vertical-align: middle;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.card-text{
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.product-categories .card:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 12px;
+}
+
+.slider-img{
+    width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+
+@media screen and (max-width: 800px) {
+    .col-3, .col-6 {
+        width: calc(100% - 3rem);
+        display: block;
+        
+    }
+
+    .card-img{
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+}
+
+/* Register */
+.register-form input[type=text], input[type=password], select{
+    border: 1px solid #ccc;
+    background-color: #EFEFEF;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    display: inline-block;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+.register-form label{
+    font-weight: bolder;
+}
+
+.input-group{
+    margin: 1rem 0;
+}
+
+.btn-submit{
+    background-color: wheat;
+    padding: 0.5rem;
+    border: 1px solid #ccc;;
+    border-radius: 0.25rem;
+}
+
+.text-danger{
+    color: #cc2a24;
+}
+
+.error-msg{
+    color: #cc2a24;
+    font-size: 14px;
+    display: none;
+}
+
+
+/* About Us */
+.width-70 {
+    width: 70%; 
+    float: left;
+    box-sizing: border-box;
+}
+
+.width-30{
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.img-about-us{
+    width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 0.25rem;
+}
+
+/* Location */
+
+.gmaps{
+    position: relative;
+    padding-bottom: 50%;
+}
+
+.gmaps iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Footer */
+.footer{
+    text-align: center;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: wheat;
+	padding: 0.75rem 0;
+}

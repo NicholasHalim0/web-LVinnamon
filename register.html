@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/logo-transparent-crop.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/register.js"></script>
+    <title>LVinnamon</title>
+</head>
+<body>
+    <header>
+        <img src="assets/header.png" class="header-img">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="menu-btn">
+                    <a href="#">Menu</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="mt-5 mb-5 mx-10">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-text">
+                            <div class="card-title">
+                                <span>Register</span><hr>
+                            </div>
+
+                            <form class="register-form text-left mx-3" onsubmit="return handleSubmit()">
+                                <div class="input-group">
+                                    <label>
+                                        Full Name 
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" name="txtName" id="txtName" placeholder="Enter your name">
+                                    <span class="error-msg" id="errName">Name must be filled and contain at least 3 characters</span>
+                                </div>
+                                
+                                <div class="input-group">
+                                    <label>
+                                        Gender
+                                        <span class="text-danger">*</span>
+                                    </label><br>
+                                    <input type="radio" name="rbGender" value="Male" id="rbMale" ><span>Male</span>
+                                    <input type="radio" name="rbGender" value="Female" id="rbFemale" ><span>Female</span>
+                                    <br>    
+                                    <span class="error-msg" id="errGender">Please choose a gender</span>
+                                </div>
+
+                                <div class="input-group">
+                                    <label>
+                                        Region
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <select name="slcRegion" id="slcRegion">
+                                        <option value="idn">Indonesia</option>
+                                        <option value="jpn">Japan</option>
+                                        <option value="net">Netherlands</option>
+                                        <option value="usa">America</option>
+                                        <option value="rus">Russia</option>
+                                    </select>
+                                    <span class="error-msg" id="errRegion">Please choose a region</span>
+                                </div>
+                                
+                                <div class="input-group">
+                                    <label>
+                                        Password
+                                        <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="password" name="txtPassword" id="txtPassword" placeholder="Enter your password">
+                                    <span class="error-msg" id="errPassword">Password must be filled and contain at least 8 characters</span>
+                                </div>
+
+                                <div class="input-group">
+                                    <input type="checkbox" name="cbTermsConditions" id="cbTermsConditions">
+                                    <span>I agree to the Terms and Conditions <label class="text-danger">*</label></span><br>
+                                    <span class="error-msg" id="errTermsConditions">Please agree to the terms and conditions</span>
+                                </div>
+
+                                <button type="submit" class="btn-submit">Submit</button>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            ©Copyright 2023 LVinnamon
+        </div>
+    </footer>
+</body>
+</html>
