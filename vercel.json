@@ -1,1 +1,9 @@
-{ "REWRITES": [{ "SOURCE": "/(.*)", "DESTINATION": "/"}]}
+{
+  "rewrites": [
+    { "source": "/", "destination": "/home.html" },
+    { "source": "/about", "destination": "/about-us.html" },
+    { "source": "/location", "destination": "/location.html" },
+    { "source": "/products", "destination": "/products.html" },
+    { "source": "/register", "destination": "/register.html" }
+  ]
+}
